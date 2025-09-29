@@ -1,3 +1,18 @@
+test_inputs = [
+    "Michael van Gerwen",
+    "Triple", "20",
+    "Triple", "19",
+    "Double", "10",
+    "Single", "3",
+    "Single", "1",
+    "Triple", "20",
+    "Triple", "20",
+    "Double", "20"
+]
+input_iterator = iter(test_inputs)
+def input():
+    return next(input_iterator)
+
 player_name: str = str(input())
 points:int = 301
 successful_shots:int = 0
